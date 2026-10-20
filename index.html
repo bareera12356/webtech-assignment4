@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown slides</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="toolbar">
+    <h1>Markdown slides</h1>
+    <div>
+    <span id="status"></span>
+    <button id="saveBtn">Save</button>
+      <button id="presentBtn">Present</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <section class="pane editor-pane">
+      <textarea id="editor" placeholder="Write your Markdown here. Use --- to separate slides."></textarea>
+    </section>
+    <section class="pane preview-pane">
+      <div id="slideView" class="slide"></div>
+
+      <div class="controls">
+      <button id="prevBtn">Left</button>
+       <span id="slideCount">0 / 0</span>
+      <button id="nextBtn">Right</button>
+       <button id="fullBtn">Full Screen</button>
+      </div>
+    </section>
+  </main>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
